@@ -1,0 +1,124 @@
+.menu nav ul {
+    display: flex;
+}
+
+.menu .menu-container nav ul li a {
+    font-size: 2rem;
+    border-radius: 30px;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+
+.menu .menu-container nav ul li a:hover {
+    color: #f4ebeb;
+}
+
+
+/* ---RESPONSIVE--- */
+
+.menu .menu-responsivo {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    position: relative;
+    top: 20px;
+}
+
+.menu nav label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+}
+
+/* .menu .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 30px;
+    transition: 0.5s ease-in-out;
+} */
+.menu .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.menu .hamburguer::before,
+.menu .hamburguer::after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.menu .hamburguer::before {
+    top: -10px;
+}
+
+.menu .hamburguer::after {
+    bottom: -10px;
+}
+
+.menu input {
+    display: none;
+}
+
+.menu input:checked ~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.menu input:checked ~label .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.menu input:checked ~label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .menu .menu-responsivo {
+        display: block;
+    }
+
+    .menu nav ul {
+        display: none;
+    }
+
+    .menu input:checked ~ ul {
+        display: block;
+    }
+
+    .menu nav {
+        position: absolute;
+        top: -87px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .menu nav ul {
+        width: 200px;
+        background-color: #a6d8d9;
+        padding: 20px;
+    }
+
+    .menu nav ul a {
+        text-align: center;
+        display: block;
+        padding: 20px;
+    }
+}
+
+

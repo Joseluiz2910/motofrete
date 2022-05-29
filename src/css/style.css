@@ -1,0 +1,334 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "menu menu menu menu"
+    "about about about about"
+    "contacts contacts where where"
+    "cliente cliente cliente cliente"
+    "footer footer footer footer";
+    font-size: 2rem;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    background-color: #a6d8d9;
+}
+
+.header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.header .header-container .logo img{
+    margin-left: 40px;
+    width: 100px;
+}
+
+.header .header-container nav ul {
+    display: flex;
+    position: relative;
+    bottom: 25px;
+}
+
+.header .header-container nav ul li a {
+    margin-right: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .header-container nav ul li a:hover {
+    color: #f4ebeb;
+}
+
+
+/* --- MENU --- */
+
+
+.menu {
+    grid-area: menu;
+    background-color: #6ecbcc;
+    border-radius: 0 0 50px 50px;
+}
+
+.menu .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* --- ABOUT --- */
+
+.about {
+    grid-area: about;
+    padding: 30px;
+}
+
+.about .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+/* --- CONTACTS --- */
+
+.contacts {
+    grid-area: contacts;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.contacts .contacts-container {
+    text-align: center;
+}
+
+.contacts .contacts-container a i {
+    font-size: 5rem;    
+    margin-bottom: 50px;
+}
+
+.contacts .contacts-container .fab.fa-whatsapp {
+    color: #25D366;
+    transition: 0.5s ease-in-out;
+}
+
+.contacts .contacts-container .fab.fa-whatsapp:hover {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.contacts .contacts-container .fab.fa-instagram {
+    background: linear-gradient( #5851DB,  #5851DB, #833AB4, #C13584, #E1306C,
+     #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.contacts .contacts-container .fab.fa-instagram:hover {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.contacts .contacts-container .fab.fa-facebook {
+    color: #3b5998;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.contacts .contacts-container .fab.fa-facebook:hover {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+
+/* --- WHERE --- */
+
+.where {
+    grid-area: where;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.where .where-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.where .where-container h2 {
+    max-width: 500px;
+}
+
+
+/* --- FOOTER --- */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #a6d8d9;
+    padding: 10px 0 0 0;
+}
+
+.footer .logo img{
+    height: 160px;
+}
+
+.footer .logo h4 {
+    font-size: 0;
+}
+
+.footer nav {
+    margin: 30px;
+}
+
+.footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer nav ul li a{
+    transition: 0.3s;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.footer nav ul li a:hover {
+    color: #f4ebeb;
+}
+
+.footer .footer-copy {
+    font-size: 2rem;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --- FORMULARIO --- */
+
+.formulario {
+    grid-area: about;
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .formulario-container {
+    background-color: #a6d8d9;
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .formulario-container input {
+    margin-bottom: 15px;
+}
+.formulario .formulario-container label {
+    margin: 15px 0;
+}
+
+.formulario .formulario-container select {
+    margin-bottom: 15px;
+}
+
+.formulario .formulario-container .submit {
+    width: 60px;
+}
+
+.formulario .formulario-container a span {
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.formulario .formulario-container a span:hover {
+    color: #ffffff;
+}
+
+/* --- CALCULO --- */
+
+.calculo {
+    grid-area: about;
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculo .calculo-container {
+    background-color: #a6d8d9;
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculo .calculo-container h2 {
+    margin-bottom: 30px;
+}
+
+.calculo .calculo-container input {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    height: 20px;
+}
+
+.calculo .calculo-container #calcular {
+    width: 100px;
+    height: 25px;
+}
+
+.calculo .calculo-container #calcular:hover {
+    cursor: pointer;
+}
+
+.calculo .calculo-container #resposta {
+    width: 100px;
+    background-color: #3b5998;
+    border-radius: 4px;
+}
+
+/* ---LOGIN --- */
+
+.login {
+    grid-area: about;
+    padding: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.login .login-container input {
+    margin: 10px 5px;
+}
+
+.menu-cliente {
+    grid-area: cliente;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-cliente .cliente-container {
+    width: 500px;
+    height: 600px;
+    background-color: #6ecbcc;
+}
+
+.menu-cliente .cliente-container ul {
+    display: flex;
+}
+
+.menu-cliente .cliente-container ul li {
+    padding: 10px 20px;
+}
+
+.menu-cliente .cliente-container ul li a {
+    transition: 0.3s ease-in-out;
+}
+
+.menu-cliente .cliente-container ul li a:hover {
+    color: #f4ebeb;
+}

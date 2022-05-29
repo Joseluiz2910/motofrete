@@ -1,0 +1,64 @@
+@media (max-width: 900px) {
+    body {
+        display: grid;
+        grid-template-areas:
+        "header header header header"
+        "menu menu menu menu"
+        "about about about about"
+        "contacts contacts contacts contacts"
+        "where where where where"
+        "footer footer footer footer";
+    }
+
+    .formulario .formulario-container {
+        width: 50%;
+    }
+
+    .menu-cliente {
+        grid-area: contacts;
+    }
+}
+
+@media (max-width: 540px) {
+    .menu-cliente .cliente-container {
+        width: 300px;
+        height: 600px;
+        background-color: #6ecbcc;
+    }
+
+    .menu-cliente .cliente-container ul {
+        display: flex;
+        flex-direction: column;   
+    }
+}
+
+
+@media (max-width: 525px) {
+    .header .header-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 150px;
+        font-size: 1.6rem;
+    }
+
+    .header .header-container .logo {
+        position: absolute;
+        bottom: 5px;
+    }
+    .header .header-container nav ul {
+        bottom: 10px;
+    }
+
+    .footer nav ul {
+        font-size: 1.6rem;
+    }
+
+    .login .login-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login .login-container .entrar{
+        width: 50px;
+    }
+}
