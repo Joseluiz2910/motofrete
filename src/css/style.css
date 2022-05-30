@@ -24,6 +24,14 @@ body {
     position: relative;
 }
 
+.header .header-container .logo span {
+    position: relative;
+    padding: 20px;
+    bottom: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 .header .header-container .logo img{
     margin-left: 40px;
     width: 100px;
@@ -256,13 +264,13 @@ body {
     align-items: center;
 }
 
-.calculo .calculo-container {
-    background-color: #a6d8d9;
-    width: 30%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-}
+    .calculo .calculo-container {
+        background-color: #a6d8d9;
+        width: 40%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
 
 .calculo .calculo-container h2 {
     margin-bottom: 30px;

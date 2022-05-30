@@ -17,9 +17,22 @@
     .menu-cliente {
         grid-area: contacts;
     }
+
+    .calculo .calculo-container {
+        width: 60%;
+    }
 }
 
 @media (max-width: 540px) {
+    .header .header-container .logo span {
+        display: flex;
+        bottom: 0;
+    }
+
+    .header .header-container .logo img{
+        margin-left: 70px ;
+    }
+
     .menu-cliente .cliente-container {
         width: 300px;
         height: 600px;
@@ -33,11 +46,11 @@
 }
 
 
-@media (max-width: 525px) {
+@media (max-width: 785px) {
     .header .header-container {
         flex-direction: column;
         justify-content: flex-start;
-        min-height: 150px;
+        min-height: 200px;
         font-size: 1.6rem;
     }
 
